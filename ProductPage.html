@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoShop - Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="ProductPage.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="Eco.png" alt="EcoShop Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                <span class="fw-bold">EcoShop</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#"><b>Home</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><b>Products</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><b>About</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><b>Contact</b></a></li>
+                </ul>
+                <div class="d-flex ms-3 align-items-center">
+                    <i class="bi bi-search me-3 fs-5"></i> <!-- Search Icon -->
+                    <i class="bi bi-person me-3 fs-5"></i> <!-- Profile Icon -->
+
+                    <!-- Cart Icon with Badge -->
+                    <a href="#" class="text-decoration-none position-relative">
+                        <i class="bi bi-cart fs-5"></i> <!-- Shopping Cart Icon -->
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">
+                            0 <!-- Number of items in the cart -->
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Page Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Product Image Section -->
+            <div class="col-md-6">
+                <img src="WB.jpg" alt="Eco-Friendly Water Bottle" class="img-fluid mb-3">
+                <div class="d-flex">
+                    <img src="WB.jpg" class="thumbnail-img me-2" alt="Thumbnail">
+                    <img src="Thumb1.jpg" class="thumbnail-img me-2" alt="Thumbnail 1">
+                    <img src="Thumb2.jpg" class="thumbnail-img me-2" alt="Thumbnail 2">
+                    <img src="Thumb3.jpg" class="thumbnail-img" alt="Thumbnail 3">
+                </div>
+            </div>
+
+            <!-- Product Details Section -->
+            <div class="col-md-6">
+                <h1>Eco-Friendly Water Bottle</h1>
+                <p class="text-muted fs-4">Rs.500</p>
+                <p>This eco-friendly water bottle is made from sustainable materials...</p>
+
+                <div class="mb-3">
+                    <label for="size" class="form-label">Size:</label>
+                    <select id="size" class="form-select w-50">
+                        <option value="500ml">500ml</option>
+                        <option value="750ml">750ml</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="color" class="form-label">Color:</label>
+                    <div class="d-flex">
+                        <span class="color-swatch bg-secondary me-2"></span>
+                        <span class="color-swatch bg-purple me-2"></span>
+                        <span class="color-swatch bg-light me-2"></span>
+                    </div>
+                </div>
+
+                <button id="add-to-cart" class="btn btn-primary w-100">Add to Cart</button>
+
+                <!-- Customer Reviews Section -->
+                <section class="mt-5">
+                    <h3>Customer Reviews</h3>
+                    <div class="review mb-3">
+                        <strong>Alex Johnson</strong>
+                        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        <p>Great product! I've been using it daily and love the quality.</p>
+                    </div>
+                    <div class="review">
+                        <strong>Emily Clark</strong>
+                        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        <p>Good value for money. The color options are fantastic!</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Our Story</p>
+                    <p>Sustainability</p>
+                    <p>Careers</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Customer Service</h5>
+                    <p>Help Center</p>
+                    <p>Returns</p>
+                    <p>Shipping</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email</p>
+                    <p>Phone</p>
+                    <p>Live Chat</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="ProductPage.js"></script>
+</body>
+</html>

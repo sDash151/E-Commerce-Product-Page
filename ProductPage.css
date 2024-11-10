@@ -1,0 +1,60 @@
+/* Custom Styles */
+
+.thumbnail-img {
+    width: 70px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.color-swatch {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bg-purple {
+    background-color: #6a0dad;
+}
+
+/* Bootstrap overrides */
+.review strong {
+    font-size: 1.1em;
+}
+/* Logo hover effect */
+.navbar-brand:hover {
+    color: #28a745;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+    background-color: #5a1aa0;
+    color: #ffffff;
+    border-color: #5a1aa0;
+    transition: background-color 0.3s ease;
+}
+
+/* Color swatch hover effect */
+.color-swatch:hover {
+    border: 2px solid #0b070e;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Product image hover effect */
+.thumbnail-img {
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-img:hover {
+    transform: scale(1.05);
+}
+
+/* Navbar link hover effect */
+.nav-link:hover {
+    color: #28a745;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
